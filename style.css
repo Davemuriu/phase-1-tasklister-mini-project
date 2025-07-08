@@ -35,3 +35,76 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+/* Task Items */
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.priority-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-right: 10px;
+  background-color: #e0e0e0;
+}
+
+/* Priority Colors */
+.high-priority { color: #ff4444; }
+.medium-priority { color: #ff9900; }
+.low-priority { color: #00aa00; }
+
+/* Buttons */
+.delete-btn, .edit-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: opacity 0.3s;
+}
+
+.delete-btn:hover, .edit-btn:hover {
+  opacity: 0.8;
+}
+
+.delete-btn {
+  background-color: #ff4444;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #4488ff;
+  color: white;
+  margin-right: 5px;
+}
+
+/* Priority Dropdown */
+#priority {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Form Layout Adjustments */
+#create-task-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+#create-task-form label {
+  margin-right: 5px;
+}
